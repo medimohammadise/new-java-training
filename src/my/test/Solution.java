@@ -1,32 +1,13 @@
 package my.test;
 
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.Stack;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 public class Solution {
-	public static void predicateTest() {
-		List<Integer> myList = Arrays.asList(1, 3, 5,3,5, 7, 9);
-		System.out.println(myList.stream().filter(getGreatherThan()).collect(Collectors.<Integer>toList())
-				);
-        Set<Integer> set=new HashSet<Integer>(myList);
-        myList.clear();
-        myList.addAll(set);
-        System.out.println(myList);
-	}
-	public static Predicate<Integer> getGreatherThan() {
-		return i->i>4;
-		
-	}
+	
 	public static void main(String[] args) {
-		predicateTest();
+		
 	}
 
 	
