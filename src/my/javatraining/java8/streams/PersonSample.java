@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -19,7 +20,7 @@ public class PersonSample {
 
 		);
 	}
-
+   
 	public static List<String> getAllFmalesUpperNamesOlderThan1(List<Person> people, int ageLimit) {
 		return people.stream().filter(person -> person.getAge() > ageLimit).map(person -> person.getName())
 				.map(name -> name.toUpperCase()).collect(Collectors.toList());
@@ -173,6 +174,13 @@ public class PersonSample {
 		System.out.println(findThefirstpersonWhosenameis4andoldertahnPerformance2(people,12));
 		
 		generateInifinteCollection();
+		
+		Function<Person,Integer> function=person->person.getAge();
+		System.out.println("person's age "+ function.apply(new Person("test",12,Gender.MALE)));
+		
+		Function<Person,Integer> functionMethodReference=Person::getAge;
+		System.out.println("person's age "+ functionMethodReference.apply(new Person("test",12,Gender.MALE)));
+		
 		
 	}
 }
