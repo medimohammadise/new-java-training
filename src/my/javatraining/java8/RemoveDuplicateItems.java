@@ -19,6 +19,7 @@ public class RemoveDuplicateItems {
 	public static void main(String[] args) {
 		List<String> originalList=Arrays.asList("a","b","b","c","c");
 		System.out.println(removeDuplicateJava8(originalList));
+		//we have to make new ArrayList because Arrays.asList returns fixed array and clear method will raise UnSupportedOperationException
 		List<String> arrayList = new java.util.ArrayList<String>(originalList);
 		System.out.println(removeDuplicateJava7(arrayList));
 	}

@@ -1,4 +1,4 @@
-package my.test;
+package my.javatraining.oo;
 
 public class Hourse extends Animal {
 
