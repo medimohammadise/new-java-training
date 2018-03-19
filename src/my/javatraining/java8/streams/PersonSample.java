@@ -2,8 +2,11 @@ package my.javatraining.java8.streams;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Optional;
 import java.util.Set;
 import java.util.function.Function;
@@ -144,6 +147,24 @@ public class PersonSample {
 		Stream.iterate(1,e->e+1).filter(e->e%2==0).limit(10).forEach(System.out::println);
 	}
 	
+	public static List<Person> sortByAllAge(List<Person> people) {
+		return people.stream().sorted((person1,person2)->
+		(person1.getAge()<person2.getAge()?1:-1)).collect(toList());
+	}
+	
+	public static List<Person> sortByAllAgeJava7(List<Person> people) {
+		 Collections.sort(people, new Comparator<Person>(){
+
+			@Override
+			public int compare(Person person1, Person person2) {
+				
+				return person1.getAge()-person2.getAge();
+			}
+			
+		});
+		 return people;
+	}
+	
 	public static void main(String[] args) {
 		List<Person> people = createPeople();
 		System.out.println(getAllFmalesUpperNamesOlderThan1(people, 18));
@@ -180,7 +201,8 @@ public class PersonSample {
 		
 		Function<Person,Integer> functionMethodReference=Person::getAge;
 		System.out.println("person's age "+ functionMethodReference.apply(new Person("test",12,Gender.MALE)));
-		
-		
+		System.out.println("**** Sorted List ****");
+		System.out.println(sortByAllAge(people)); 
+		System.out.println(sortByAllAgeJava7(people)); 
 	}
 }
