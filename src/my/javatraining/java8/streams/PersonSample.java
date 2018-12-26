@@ -24,11 +24,17 @@ public class PersonSample {
 		);
 	}
    
-	public static List<String> getAllFmalesUpperNamesOlderThan1(List<Person> people, int ageLimit) {
+	public static List<String> getOnlyThreeFmalesUpperNamesOlderThan1(List<Person> people, int ageLimit) {
 		return people.stream().filter(person -> person.getAge() > ageLimit).map(person -> person.getName())
-				.map(name -> name.toUpperCase()).collect(Collectors.toList());
+				.map(name -> name.toUpperCase()).limit(3).collect(Collectors.toList());
 
 	}
+	public static String getFirstFmalesUpperNamesOlderThan1(List<Person> people, int ageLimit) {
+		return people.stream().filter(person -> person.getAge() > ageLimit).map(person -> person.getName())
+				.map(name -> name.toUpperCase()).findFirst().orElse("Not Found");
+
+	}
+
 
 	public static List<String> getAllFmalesUpperNamesOlderThan2(List<Person> people, int ageLimit) {
 		return people.stream().filter(person -> person.getAge() > ageLimit).map(Person::getName)
@@ -167,7 +173,8 @@ public class PersonSample {
 	
 	public static void main(String[] args) {
 		List<Person> people = createPeople();
-		System.out.println(getAllFmalesUpperNamesOlderThan1(people, 18));
+		System.out.println(getOnlyThreeFmalesUpperNamesOlderThan1(people, 20));
+		System.out.println(getFirstFmalesUpperNamesOlderThan1(people,90));
 		System.out.println(getAllFmalesUpperNamesOlderThan2(people, 18));
 		printAllmales(people);
 		System.out.println(getAllmales(people));
