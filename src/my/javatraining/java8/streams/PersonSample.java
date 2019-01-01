@@ -13,13 +13,14 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.*;
 
 public class PersonSample {
 	public static List<Person> createPeople() {
-		return Arrays.asList(new Person("Sara", 22, Gender.FMALE), new Person("Sara", 20, Gender.FMALE),
-				new Person("Bob", 20, Gender.MALE), new Person("Pual", 32, Gender.MALE),
-				new Person("jack", 32, Gender.MALE), new Person("Alen", 2, Gender.MALE)
+		return Arrays.asList(new Person("Sara", 22, Gender.FMALE), new Person("Mohsen", 33, Gender.FMALE),
+				new Person("Bill", 33, Gender.MALE), new Person("Jill", 12, Gender.MALE),
+				new Person("jack", 2, Gender.MALE), new Person("Jack", 2, Gender.MALE)
 
 		);
 	}
@@ -170,10 +171,19 @@ public class PersonSample {
 		});
 		 return people;
 	}
-	
+
+
+	public static Set<Person> stortByAgeAndCollectToSet(List<Person> people){
+		Function<Person,Integer> byAge=Person::getAge;
+		return people.stream().sorted(comparing(byAge)).collect(toSet());
+	}
+	public static Set<Person> stortByNameAndCollectToSet(List<Person> people){
+		Function<Person,String> byAge=Person::getName;
+		return people.stream().sorted(comparing(byAge)).collect(toSet());
+	}
 	public static void main(String[] args) {
 		List<Person> people = createPeople();
-		System.out.println(getOnlyThreeFmalesUpperNamesOlderThan1(people, 20));
+		/*System.out.println(getOnlyThreeFmalesUpperNamesOlderThan1(people, 20));
 		System.out.println(getFirstFmalesUpperNamesOlderThan1(people,90));
 		System.out.println(getAllFmalesUpperNamesOlderThan2(people, 18));
 		printAllmales(people);
@@ -210,6 +220,8 @@ public class PersonSample {
 		System.out.println("person's age "+ functionMethodReference.apply(new Person("test",12,Gender.MALE)));
 		System.out.println("**** Sorted List ****");
 		System.out.println(sortByAllAge(people)); 
-		System.out.println(sortByAllAgeJava7(people)); 
+		System.out.println(sortByAllAgeJava7(people)); */
+		System.out.println(stortByAgeAndCollectToSet(people)); //removes duplicate ones in age
+		System.out.println(stortByNameAndCollectToSet(people)); //removes duplicate ones in age but the output is different
 	}
 }

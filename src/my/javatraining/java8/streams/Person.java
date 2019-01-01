@@ -37,4 +37,18 @@ public class Person {
 	}
 	
 
+	@Override
+	public int hashCode() {
+		return age;
+	}
+    //this will cause when we are using collect(set()) it will remove same ages
+	@Override
+	public boolean equals(Object other) {
+		if (other instanceof Person)
+			return ((Person)other).getAge()==this.age;
+		else
+			return false;
+	}
+
+
 }

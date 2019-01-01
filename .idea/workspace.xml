@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52a4e0d8-9523-43b2-a105-d6e2f1f76958" name="Default" comment="added Terminator and Intermediate functions&#10;replaceAll function sample">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/my/javatraining/java8/SortingByUsingStreams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/my/javatraining/java8/SortingByUsingStreams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/my/javatraining/java8/streams/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/my/javatraining/java8/streams/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/my/javatraining/java8/streams/PersonSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/my/javatraining/java8/streams/PersonSample.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,23 +30,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="7" />
+          <entry key="java" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="7" />
+          <entry key="JAVA" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="java" value="1328" />
+          <entry key="java" value="2078" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1328" />
+          <entry key="JAVA" value="2078" />
           <entry key="PLAIN_TEXT" value="13" />
         </counts>
       </usages-collector>
@@ -53,39 +55,36 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/my/javatraining/model/Person.java">
+        <entry file="file://$PROJECT_DIR$/src/my/javatraining/java8/streams/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+            <state relative-caret-position="397">
+              <caret line="43" column="79" selection-start-line="43" selection-start-column="79" selection-end-line="43" selection-end-column="79" />
               <folding>
-                <element signature="e#221#222#0" expanded="true" />
-                <element signature="e#248#249#0" expanded="true" />
-                <element signature="e#288#289#0" expanded="true" />
-                <element signature="e#320#321#0" expanded="true" />
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#373#374#0" expanded="true" />
-                <element signature="e#408#409#0" expanded="true" />
-                <element signature="e#438#439#0" expanded="true" />
-                <element signature="e#539#540#0" expanded="true" />
+                <element signature="e#777#778#0" expanded="true" />
+                <element signature="e#807#808#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/my/javatraining/java8/streams/Person.java">
+        <entry file="file://$PROJECT_DIR$/src/my/javatraining/java8/streams/PersonCompare.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="60">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding>
+                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#327#328#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/my/javatraining/java8/streams/PersonSample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="46" selection-end-line="215" />
+            <state relative-caret-position="445">
+              <caret line="224" column="123" selection-start-line="224" selection-start-column="123" selection-end-line="224" selection-end-column="123" />
             </state>
           </provider>
         </entry>
@@ -99,7 +98,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/my/javatraining/EPamTest/MissingWords.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
@@ -107,6 +106,24 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/my/javatraining/java8/streams/StreamPractice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/my/javatraining/java8/SortingByUsingStreams.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -160,18 +177,21 @@
         <option value="$PROJECT_DIR$/src/my/javatraining/java8/TerminatorAndIntermediate.java" />
         <option value="$PROJECT_DIR$/src/my/javatraining/java8/TwoArityFunction.java" />
         <option value="$PROJECT_DIR$/src/my/javatraining/model/Person.java" />
-        <option value="$PROJECT_DIR$/src/my/javatraining/java8/SortingByUsingStreams.java" />
         <option value="$PROJECT_DIR$/src/my/javatraining/java8/SupplierPractice.java" />
-        <option value="$PROJECT_DIR$/src/my/javatraining/java8/streams/PersonSample.java" />
         <option value="$PROJECT_DIR$/src/my/javatraining/EPamTest/PracticeTest.java" />
         <option value="$PROJECT_DIR$/src/my/javatraining/EPamTest/Missingwords.java" />
         <option value="$PROJECT_DIR$/src/my/javatraining/EPamTest/MissingWords.java" />
+        <option value="$PROJECT_DIR$/src/my/javatraining/java8/SortingByUsingStreams.java" />
+        <option value="$PROJECT_DIR$/src/my/javatraining/java8/streams/PersonCompare.java" />
+        <option value="$PROJECT_DIR$/src/my/javatraining/java8/streams/Person.java" />
+        <option value="$PROJECT_DIR$/src/my/javatraining/java8/streams/PersonSample.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="height" value="965" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -209,7 +229,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="my" type="462c0819:PsiDirectoryNode" />
               <item name="javatraining" type="462c0819:PsiDirectoryNode" />
-              <item name="EPamTest" type="462c0819:PsiDirectoryNode" />
+              <item name="java8" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaTraining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaTraining" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="my" type="462c0819:PsiDirectoryNode" />
+              <item name="javatraining" type="462c0819:PsiDirectoryNode" />
+              <item name="java8" type="462c0819:PsiDirectoryNode" />
+              <item name="streams" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaTraining" type="b2602c69:ProjectViewProjectNode" />
@@ -248,7 +277,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MissingWords">
+  <component name="RunManager" selected="Application.PersonSample">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -268,6 +297,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="my.javatraining.EPamTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonCompare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.javatraining.java8.streams.PersonCompare" />
+      <module name="JavaTraining" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my.javatraining.java8.streams.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -317,20 +360,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoArityFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my.javatraining.java8.TwoArityFunction" />
-      <module name="JavaTraining" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="my.javatraining.java8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -352,19 +381,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TwoArityFunction" />
       <item itemvalue="Application.SortingByUsingStreams" />
       <item itemvalue="Application.PersonSample" />
       <item itemvalue="Application.SupplierPractice" />
       <item itemvalue="Application.MissingWords" />
+      <item itemvalue="Application.PersonCompare" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PersonSample" />
+        <item itemvalue="Application.PersonCompare" />
         <item itemvalue="Application.MissingWords" />
         <item itemvalue="Application.SupplierPractice" />
-        <item itemvalue="Application.PersonSample" />
         <item itemvalue="Application.SortingByUsingStreams" />
-        <item itemvalue="Application.TwoArityFunction" />
       </list>
     </recent_temporary>
   </component>
@@ -391,8 +420,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2820513" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2820513" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -403,7 +433,7 @@
       <window_info anchor="bottom" id="Docker" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32968536" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.32959184" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -480,13 +510,6 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_141.jdk/Contents/Home/src.zip!/java/util/stream/Stream.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_141.jdk/Contents/Home/src.zip!/java/util/stream/Collectors.java" />
-    <entry file="file://$PROJECT_DIR$/src/my/javatraining/java8/SortingByUsingStreams.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="34" lean-forward="true" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/my/javatraining/model/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -502,20 +525,6 @@
             <element signature="e#438#439#0" expanded="true" />
             <element signature="e#539#540#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/my/javatraining/java8/streams/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/my/javatraining/java8/streams/PersonSample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="46" selection-end-line="215" />
         </state>
       </provider>
     </entry>
@@ -557,6 +566,49 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/my/javatraining/java8/streams/StreamPractice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/my/javatraining/java8/SortingByUsingStreams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/my/javatraining/java8/streams/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="43" column="79" selection-start-line="43" selection-start-column="79" selection-end-line="43" selection-end-column="79" />
+          <folding>
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#807#808#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/my/javatraining/java8/streams/PersonCompare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/my/javatraining/java8/streams/PersonSample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="224" column="123" selection-start-line="224" selection-start-column="123" selection-end-line="224" selection-end-column="123" />
         </state>
       </provider>
     </entry>

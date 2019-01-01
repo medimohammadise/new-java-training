@@ -18,11 +18,12 @@ public class SortingByUsingStreams {
     Comparator<Person> ageComparatorAscending = ((person1, person2) -> person1.getAge()-person2.getAge());
     Comparator<Person> nameComparatorAscending = ((person1, person2) -> person1.getName().compareTo(person2.getName()));
 
-    Function<Person,Integer> byAge= (person -> person.getAge());
-    Function<Person,String> byName= (person -> person.getName());
+    Function<Person,Integer> byAge= Person::getAge;// or  (person -> person.getAge());
+    Function<Person,String> byName= Person::getName;// or (person -> person.getName());
 
 
     public List<Person> doAgeAsendingSort(){
+        //more civilised way to do this is using collect method
         return persons.stream().sorted(ageComparatorAscending).collect(Collectors.toList());
     }
     public List<Person> doNameAsendingSort(){
