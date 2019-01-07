@@ -7,8 +7,8 @@ import java.util.List;
 public class MissingWords {
     public static void main(String[] args){
 
-        String s = " Programmer Programmer Programmer ";
-        String t = " Programmer Programmer";
+        String s = "This is a cat.this is my cat.";
+        String t = "this is a cat.this is my cat. ";
         List<String> str = missingwords2(s,t);
         for(int i=0;i<str.size();i++)
             System.out.println(str.get(i));
@@ -23,7 +23,7 @@ public class MissingWords {
         for(int i=0;i<a.length;i++){
             boolean isMatched=false;
             for(int j=0;j<b.length;j++){
-                if(a[i].equals(b[j])) {
+                if(a[i].equalsIgnoreCase(b[j])) {
                     isMatched = true;
                     b[j]="";
                     break;
@@ -34,6 +34,7 @@ public class MissingWords {
 
             }
         }
+
         return missing;
 
     }
